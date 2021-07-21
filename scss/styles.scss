@@ -1,0 +1,16 @@
+// Import The Components
+
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+// Import The Sections
+
+@use 'sections/about';
+@use 'sections/contact';
+@use 'sections/footer';
+@use 'sections/home';
+@use 'sections/navbar';
+@use 'sections/portfolio';
+@use 'sections/skills';

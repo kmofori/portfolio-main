@@ -1,0 +1,30 @@
+@use '../variables.scss' as *;
+// or as it also works
+// @import '../variables.scss'
+@use '../components/mixins' as *;
+
+// Home Button
+.home {
+  &__button {
+    @include allButtons;
+    width: 100%;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $light-text-color;
+    }
+  }
+}
+
+// Contact Button
+.contact {
+  &__button {
+    @include allButtons;
+    width: 50%;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $light-text-color;
+    }
+  }
+}

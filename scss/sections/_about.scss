@@ -1,0 +1,46 @@
+@use '../variables.scss' as *;
+
+.about {
+  &__container {
+    row-gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__description {
+    margin-bottom: $margin-5;
+  }
+
+  &__img {
+    width: 12rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+  }
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+  .about {
+    &__data {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__description {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 1rem;
+    }
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

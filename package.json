@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "My Portfolio Site using sass",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Sass",
+    "Portfolio"
+  ],
+  "author": "Kwasi Mafori",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1"
+  }
+}

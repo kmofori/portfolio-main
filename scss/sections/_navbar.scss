@@ -1,0 +1,114 @@
+@use '../variables.scss' as *;
+// or as it also works
+// @import '../variables.scss'
+
+// HEADER
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $primary-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.399);
+}
+
+// Navigation
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__toggle {
+    color: $light-text-color;
+    font-size: $h1-size;
+    cursor: pointer;
+  }
+
+  &__logo {
+    font-size: $h1-size;
+
+    span {
+      color: $light-text-color;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100vh;
+    padding: 3rem;
+    background-color: $primary-color;
+    transition: 0.5s;
+  }
+
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: $h1-size;
+    color: $light-text-color;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+  }
+
+  &__item {
+    margin-bottom: $margin-4;
+  }
+
+  &__link {
+    font-size: $h2-size;
+    text-transform: uppercase;
+    color: $light-text-color;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      color: $tertiary-color;
+    }
+  }
+}
+
+.show {
+  left: 0;
+}
+
+.active {
+  color: $tertiary-color;
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+  .nav {
+    &__menu {
+      width: $nav-width;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-header {
+    width: 0;
+  }
+
+  .nav {
+    &__toggle,
+    &__close,
+    &__logo {
+      display: none;
+    }
+
+    &__menu {
+      left: 0;
+    }
+  }
+}

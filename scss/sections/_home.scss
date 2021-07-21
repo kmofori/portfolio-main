@@ -1,0 +1,71 @@
+@use '../variables.scss' as *;
+// or as it also works
+// @import '../variables.scss'
+
+.home {
+  &__container {
+    height: calc(100vh - 3rem);
+    align-items: center;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+  }
+
+  &__img img {
+    width: 160px;
+    height: 160px;
+    border: 2px solid $secondary-color;
+    border-radius: 50%;
+    margin-bottom: $margin-2;
+  }
+
+  &__title {
+    font-size: $h1-size;
+    color: $secondary-color;
+    font-weight: $fw-medium;
+  }
+
+  &__profession {
+    font-size: $normal-size;
+    color: $dark-text-color;
+    margin-bottom: $margin-5;
+  }
+
+  &__social {
+    margin-bottom: $margin-5;
+  }
+
+  &__social-link {
+    color: $tertiary-color;
+    font-size: $h1-size;
+    padding: $padding-1;
+    margin: 0 $margin-1;
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+  .home {
+    &__button {
+      width: initial;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    &__container {
+      height: 100vh;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: #014f86;
+  font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8fbfc;
+  color: #001219;
+  line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 0;
+    padding-left: 24rem;
+  }
+}
+.section {
+  padding: 4rem 0 2rem;
+}
+.section-title {
+  font-size: 2rem;
+  color: #012a4a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.section-subtitle {
+  display: block;
+  font-size: 0.8rem;
+  color: #001219;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 3rem 0 2rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #468faf;
+}
+
+.bd-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=variables.css.map */

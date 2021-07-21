@@ -1,0 +1,52 @@
+@use '../variables.scss' as *;
+
+.footer {
+  background-color: $primary-color;
+  color: $tertiary-color;
+  text-align: center;
+
+  &__title {
+    font-size: $h2-size;
+    margin-bottom: $margin-2;
+    display: inline-block;
+  }
+
+  &__description {
+    margin-bottom: $margin-2;
+  }
+
+  &__social {
+    margin-bottom: $margin-1;
+  }
+
+  &__link {
+    display: inline-flex;
+    font-size: $h2-size;
+    padding: 0.5rem;
+    margin: 0 $margin-1;
+    color: $tertiary-color;
+    transition: 0.3s;
+
+    &:hover {
+      color: $light-text-color;
+    }
+  }
+
+  &__copy {
+    font-size: $small-size;
+    color: $secondary-color;
+  }
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+  .footer {
+    background: none;
+
+    &__container {
+      background-color: $primary-color;
+      border-radius: 0.5rem;
+      padding: 3rem 1rem;
+    }
+  }
+}
