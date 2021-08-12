@@ -1,0 +1,133 @@
+// VARIABLES
+$header-height: 3rem;
+$nav-width: 24rem;
+
+// Font Weight
+$fw-regular: 400;
+$fw-medium: 600;
+$fw-bold: 800;
+
+// Colors
+$primary-color: #012a4a;
+$secondary-color: #014f86;
+$tertiary-color: #468faf;
+$dark-text-color: #001219;
+$light-text-color: #edf2f4;
+
+// Font and Typography
+$h1-size: 2rem;
+$h2-size: 1.5rem;
+$h3-size: 1.25rem;
+$normal-size: 1rem;
+$small-size: 0.8rem;
+
+// Margins
+$margin-1: 0.5rem;
+$margin-2: 1rem;
+$margin-3: 1.5rem;
+$margin-4: 2rem;
+$margin-5: 2.5rem;
+
+// Padding
+$padding-1: 0.5rem;
+$padding-2: 1rem;
+$padding-3: 1.5rem;
+$padding-4: 2rem;
+$padding-5: 2.5rem;
+
+// BASE
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  color: $secondary-color;
+  font-size: $normal-size;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: lighten($color: $tertiary-color, $amount: 50%);
+  color: $dark-text-color;
+  line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 0;
+    padding-left: $nav-width;
+  }
+}
+
+.section {
+  padding: 4rem 0 2rem;
+
+  &-title {
+    font-size: $h1-size;
+    color: $primary-color;
+    margin-bottom: $margin-3;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &-subtitle {
+    display: block;
+    font-size: $small-size;
+    color: $dark-text-color;
+    text-align: center;
+    font-weight: $fw-bold;
+    margin-bottom: $margin-1;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 3rem 0 2rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $tertiary-color;
+}
+
+// Layout
+.bd-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin: 0 $margin-2;
+}
