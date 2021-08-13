@@ -9,9 +9,11 @@
   &__img {
     position: relative;
     overflow: hidden;
+    height: 100%;
 
     img {
       border-radius: 0.5rem;
+      height: 100%;
     }
   }
 
