@@ -10,6 +10,10 @@
   }
 
   &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: $margin-5;
   }
 
@@ -17,6 +21,12 @@
     width: 12rem;
     border-radius: 0.5rem;
     margin: 0 auto;
+  }
+
+  br {
+    display: inline-block;
+    content: '';
+    margin-top: 1rem;
   }
 }
 

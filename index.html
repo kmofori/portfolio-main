@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Fontawesome Link -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css"> -->
+
+    <!-- Boxicons Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Google Fonts -->
     <link
@@ -25,16 +28,18 @@
 <body>
     <!-- HEADER -->
     <header class="l-header">
-        <nav class="nav bd-grid">
+        <nav class="nav grid">
             <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
+                <!-- <i class="fas fa-bars"></i> -->
+                <i class='bx bx-menu-alt-left'></i>
             </div>
             <div>
                 <a href="#" class="nav__logo">Kwasi<span>.</span>Mafori</a>
             </div>
             <div id="nav-menu" class="nav__menu">
                 <div id="nav-close" class="nav__close">
-                    <i class="fas fa-times"></i>
+                    <!-- <i class="fas fa-times"></i> -->
+                    <i class='bx bx-x'></i>
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
@@ -50,7 +55,7 @@
     <main class="main">
         <!-- HOME -->
         <section id="home" class="home">
-            <div class="home__container bd-grid">
+            <div class="home__container grid">
                 <div class="home__data">
                     <div class="home__img">
                         <img src="assets/images/mainpic.jpg" alt="image of myself">
@@ -59,13 +64,15 @@
                     <span class="home__profession">Frontend Developer</span>
                     <div class="home__social">
                         <a href="#" class="home__social-link">
-                            <i class="fab fa-linkedin-in"></i>
+                            <!-- <i class="fab fa-linkedin-in"></i> -->
+                            <i class='bx bxl-linkedin'></i>
                         </a>
                         <a href="#" class="home__social-link">
-                            <i class="fab fa-github"></i>
+                            <!-- <i class="fab fa-github"></i> -->
+                            <i class='bx bxl-github'></i>
                         </a>
                     </div>
-                    <a download="" href="#" class="button home__button">Download Resume</a>
+                    <a download="" href="#" class="button home__button">Hello World !</a>
                 </div>
             </div>
         </section>
@@ -75,13 +82,19 @@
             <span class="section-subtitle">brief intro</span>
             <h2 class="section-title">about me</h2>
 
-            <div class="about__container bd-grid">
+            <div class="about__container grid">
                 <div class="about__data">
                     <p class="about__description">
-                        Hi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eos velit blanditiis
-                        deserunt alias dolor obcaecati officia suscipit officiis incidunt laudantium tempora ad ex?
-                        Perspiciatis adipisci facere animi quidem sapiente?
+                        I'm Kwasi Mafori, A Front-End Web Developer. From manual Software Testing to lines of code on a
+                        web page, I love the idea of combining the worlds of logic and creative design to produce
+                        quality and user friendly websites and applications.
+                        <br>
+                        I am a self-starter, a builder(working with modern and in fashion technologies) and a learner
+                        constantly keeping up with the modern trends in web development.
+                        <br>
+                        I am highly excited to have made the leap and even more exicited to coninue refining my skills.
                     </p>
+
                     <img src="assets/images/mainpic.jpg" alt="My picture-about" class="about__img">
                 </div>
             </div>
@@ -92,37 +105,48 @@
             <span class="section-subtitle">My Area of Expertise</span>
             <h2 class="section-title">Skills</h2>
 
-            <div class="skills__content bd-grid">
+            <div class="skills__content grid">
                 <h3 class="skills__subtitle">FrontEnd</h3>
 
                 <div class="skills__data">
                     <span class="skills__name">HTML</span>
-                    <i class="fab fa-html5"></i>
+                    <!-- <i class="fab fa-html5"></i> -->
+                    <i class='bx bxl-html5'></i>
                 </div>
 
                 <div class="skills__data">
                     <span class="skills__name">CSS</span>
-                    <i class="fab fa-css3-alt"></i>
+                    <!-- <i class="fab fa-css3-alt"></i> -->
+                    <i class='bx bxl-css3'></i>
                 </div>
 
                 <div class="skills__data">
                     <span class="skills__name">SASS</span>
-                    <i class="fab fa-sass"></i>
+                    <!-- <i class="fab fa-sass"></i> -->
+                    <i class='bx bxl-sass'></i>
                 </div>
 
                 <div class="skills__data">
                     <span class="skills__name">Bootstrap</span>
-                    <i class="fab fa-bootstrap"></i>
+                    <!-- <i class="fab fa-bootstrap"></i> -->
+                    <i class='bx bxl-bootstrap'></i>
                 </div>
 
                 <div class="skills__data">
                     <span class="skills__name">javascript</span>
-                    <i class="fab fa-js-square"></i>
+                    <!-- <i class="fab fa-js-square"></i> -->
+                    <i class='bx bxl-javascript'></i>
+                </div>
+
+                <div class="skills__data">
+                    <span class="skills__name">rest api</span>
+                    <i class='bx bx-code-curly'></i>
                 </div>
 
                 <div class="skills__data">
                     <span class="skills__name">Node JS</span>
-                    <i class="fab fa-node"></i>
+                    <!-- <i class="fab fa-node"></i> -->
+                    <i class='bx bxl-nodejs'></i>
                 </div>
             </div>
         </section>
@@ -133,54 +157,181 @@
             <span class="section-subtitle">My Portfolio</span>
             <h2 class="section-title">Recent Projects</h2>
 
-            <div class="project__container bd-grid">
+            <div class="project__container grid">
                 <div class="project__img">
                     <img src="assets/images/projects/project1.jpg" alt="">
                     <div class="project__data">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <span class="project__title">Kalawu Resort</span>
-                        </a>
 
-                        <a href="#" class="project__link">
-                            <i class="fas fa-link"></i>
-                        </a>
+                        <span class="project__title">
+                            <a href="https://kmofori.github.io/Kalawu-Resort" target="_blank"
+                                rel="noopener noreferrer">Kalawu Resort</a>
+                        </span>
+
+                        <span class="project__link">
+                            <a href="https://github.com/kmofori/Kalawu-Resort" target="_blank"
+                                rel="noopener noreferrer">Github</a>
+                        </span>
+
+                        <div class="project__summary">
+                            <h4 class="project__summary-title">About</h4>
+                            <p class="project__summary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem esse delectus saepe
+                                assumenda accusamus numquam.
+                            </p>
+                            <div class="project__summary-info">
+                                <h4 class="project__summary-info-title">Tecnologies Used</h4>
+                                <div class="project__summary-info-icons">
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project__img">
                     <img src="assets/images/projects/project2.jpg" alt="">
                     <div class="project__data">
-                        <span class="project__title">Duks SunGlasses</span>
+                        <span class="project__title">
+                            <a href="https://kmofori.github.io/Duks-SunGlasses" target="_blank"
+                                rel="noopener noreferrer">Duks SunGlasses</a>
+                        </span>
 
-                        <a href="#" class="project__link">
-                            <i class="fas fa-link"></i>
-                        </a>
+                        <span class="project__link">
+                            <a href="https://github.com/kmofori/Duks-SunGlasses" target="_blank"
+                                rel="noopener noreferrer">Github</a>
+                        </span>
+
+                        <div class="project__summary">
+                            <h4 class="project__summary-title">About</h4>
+                            <p class="project__summary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem esse delectus saepe
+                                assumenda accusamus numquam.
+                            </p>
+                            <div class="project__summary-info">
+                                <h4 class="project__summary-info-title">Tecnologies Used</h4>
+                                <div class="project__summary-info-icons">
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project__img">
                     <img src="assets/images/projects/project3.jpg" alt="">
+                    <!-- <div class="project__data">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <span class="project__title"></span>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <span class="project__link">
+                                Github
+                            </span>
+                        </a>
+                        <div class="project__summary">
+                            <h4>About</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem esse delectus saepe
+                                assumenda accusamus numquam.
+                            </p>
+                            <div>
+                                <h4>Made With</h4>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="project__data">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <span class="project__title">Decider</span>
-                        </a>
 
-                        <a href="#" class="project__link">
-                            <i class="fas fa-link"></i>
-                        </a>
+                        <span class="project__title">
+                            <a href="https://kmofori.github.io/Decider" target="_blank"
+                                rel="noopener noreferrer">Decider</a>
+                        </span>
+
+                        <span class="project__link">
+                            <a href="https://github.com/kmofori/Decider" target="_blank"
+                                rel="noopener noreferrer">Github</a>
+                        </span>
+
+                        <div class="project__summary">
+                            <h4 class="project__summary-title">About</h4>
+                            <p class="project__summary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem esse delectus saepe
+                                assumenda accusamus numquam.
+                            </p>
+                            <div class="project__summary-info">
+                                <h4 class="project__summary-info-title">Tecnologies Used</h4>
+                                <div class="project__summary-info-icons">
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project__img">
                     <img src="assets/images/projects/project4.jpg" alt="">
+                    <!-- <div class="project__data">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <span class="project__title"></span>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <span class="project__link">
+                                Github
+                            </span>
+                        </a>
+                        <div class="project__summary">
+                            <h4>About</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem esse delectus saepe
+                                assumenda accusamus numquam.
+                            </p>
+                            <div>
+                                <h4>Made With</h4>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-css3'></i>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="project__data">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <span class="project__title">Chakula-Recipe</span>
-                        </a>
 
-                        <a href="#" class="project__link">
-                            <i class="fas fa-link"></i>
-                        </a>
+                        <span class="project__title">
+                            <a href="https://kmofori.github.io/Chakula-App" target="_blank"
+                                rel="noopener noreferrer">Chakula Recipe</a>
+                        </span>
+
+                        <span class="project__link">
+                            <a href="https://github.com/kmofori/Chakula-App" target="_blank"
+                                rel="noopener noreferrer">Github</a>
+                        </span>
+
+                        <div class="project__summary">
+                            <h4 class="project__summary-title">About</h4>
+                            <p class="project__summary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem esse delectus saepe
+                                assumenda accusamus numquam.
+                            </p>
+                            <div class="project__summary-info">
+                                <h4 class="project__summary-info-title">Tecnologies Used</h4>
+                                <div class="project__summary-info-icons">
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                    <i class='bx bxl-css3 icon'></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,13 +342,14 @@
             <span class="section-subtitle">Drop Me a message </span>
             <h2 class="section-title">Contact Me</h2>
 
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
+            <div class="contact__container grid">
+                <form action="https://formsubmit.co/kmafori@gmail.com" method="POST" class="contact__form">
                     <div class="contact__inputs">
                         <input type="text" placeholder="Your Name*" class="contact__input" required>
                         <input type="email" placeholder="Your E-mail*" class="contact__input" required>
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact__input"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact__input"
+                        required></textarea>
 
                     <input type="button" value="Send Message" class="button contact__button">
                 </form>
@@ -207,15 +359,21 @@
 
     <!-- FOOTER -->
     <footer class="footer section">
-        <div class="footer__container bd-grid">
+        <div class="footer__container grid">
             <div>
                 <a href="#" class="footer__title">Kwasi<span>.</span>Mafori</a>
             </div>
             <p class="footer__description">I am Kwasi and this is my Portfolio site.</p>
 
             <div class="footer__social">
-                <a href="#" class="footer__link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="footer__link"><i class="fab fa-github"></i></a>
+                <a href="#" class="footer__link">
+                    <!-- <i class="fab fa-linkedin-in"></i> -->
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <!-- <i class="fab fa-github"></i> -->
+                    <i class='bx bxl-github'></i>
+                </a>
             </div>
 
             <p class="footer__copy">&copy; kwasi Mafori 2021</p>

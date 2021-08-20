@@ -10,7 +10,7 @@ toggleMenu.addEventListener('click', () => {
 
 // Hide Hamburger Menu On Click
 toggleMenu.addEventListener('click', () => {
-  menuBars.classList.toggle('hide-bars');
+  navMenu.classList.toggle('hide-bars');
 });
 
 // Close Navbar

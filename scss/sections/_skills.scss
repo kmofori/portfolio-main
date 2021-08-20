@@ -20,6 +20,10 @@
       font-size: 2.5rem;
       color: $tertiary-color;
     }
+
+    span {
+      text-transform: lowercase;
+    }
   }
 
   &__name {
