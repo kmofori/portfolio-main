@@ -31,11 +31,10 @@
     transition: 0.5s;
   }
 
-  &__link {
+  &__repo {
     display: inline-flex;
-    font-size: $h3-size;
+    font-size: $normal-size;
     padding: 0 0.5rem;
-    margin-bottom: $margin-1;
 
     a {
       color: $primary-color;
@@ -43,10 +42,9 @@
   }
 
   &__title {
-    font-size: $h3-size;
+    font-size: $normal-size;
     font-weight: $fw-bold;
     text-transform: uppercase;
-    margin-bottom: $margin-1;
 
     a {
       color: $primary-color;
@@ -58,16 +56,21 @@
   }
 
   &__summary {
-    padding: 1rem;
+    padding: 0 0.5rem;
 
     &-title {
       text-align: center;
     }
 
+    &-text {
+      margin-bottom: 0;
+      font-size: $h1-size;
+    }
+
     &-info {
       &-title {
         text-align: center;
-        margin-bottom: $margin-2;
+        // margin-bottom: $margin-1;
       }
 
       &-icons {
@@ -79,13 +82,13 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 3rem;
+        font-size: 1.5rem;
       }
     }
 
     &-text {
       font-size: 0.9rem;
-      margin-bottom: $margin-2;
+      margin-bottom: 0.5rem;
     }
   }
 }
