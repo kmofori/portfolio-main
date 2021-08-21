@@ -28,3 +28,15 @@
     }
   }
 }
+
+// Submitted Button
+.submitted {
+  &__button {
+    @include allButtons;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $light-text-color;
+    }
+  }
+}

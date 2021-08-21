@@ -112,3 +112,11 @@
     }
   }
 }
+
+@media (max-width: 285px) {
+  .nav {
+    &__logo {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -72,7 +72,7 @@
                             <i class='bx bxl-github'></i>
                         </a>
                     </div>
-                    <a download="" href="#" class="button home__button">Hello World !</a>
+                    <a download="" href="#" class="home__button">Hello World !</a>
                 </div>
             </div>
         </section>
@@ -346,12 +346,21 @@
             <h2 class="section-title">Contact Me</h2>
 
             <div class="contact__container grid">
-                <form action="https://formsubmit.co/kmafori@gmail.com" method="POST" class="contact__form">
+                <form action="https://formsubmit.co/4417596bf5f8cb53301cf7a8aa1c04fe" method="POST"
+                    class="contact__form">
+                    <!-- honeypot -->
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- submitted page -->
+                    <input type="hidden" name="_next"
+                        value="https://kmofori.github.io/portfolio-main/pages/submitted.html">
+
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Your Name*" class="contact__input" required>
-                        <input type="email" placeholder="Your E-mail*" class="contact__input" required>
+                        <input type="text" placeholder="Your Name*" class="contact__input" name="Name" required>
+                        <input type="email" placeholder="Your E-mail*" class="contact__input" name="E-mail" required>
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact__input"
+                    <textarea id="" cols="30" rows="10" placeholder="Message" class="contact__input" name="Message"
                         required></textarea>
 
                     <input type="submit" value="Send Message" class="button contact__button">
