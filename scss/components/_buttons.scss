@@ -16,6 +16,26 @@
   }
 }
 
+// Projeects Modal Button
+.project {
+  &__data {
+    &-links {
+      &-button {
+        @include allButtons;
+        background-color: transparent;
+        display: block;
+        padding: 0.9rem 1rem;
+        text-align: center;
+        width: 50%;
+
+        &:hover {
+          background-color: rgba(237, 242, 244, 0.6);
+        }
+      }
+    }
+  }
+}
+
 // Contact Button
 .contact {
   &__button {
