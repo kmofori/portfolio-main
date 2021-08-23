@@ -68,7 +68,6 @@ p {
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -439,11 +438,9 @@ a {
 .project__img {
   position: relative;
   overflow: hidden;
-  height: 100%;
 }
 .project__img img {
   border-radius: 0.5rem;
-  height: 100%;
 }
 .project__data {
   position: absolute;
