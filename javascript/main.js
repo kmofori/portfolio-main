@@ -13,6 +13,7 @@ const deciderModal = document.getElementById('decider-modal');
 const chakulaButton = document.getElementById('view-chakula');
 const chakulaModal = document.getElementById('chakula-modal');
 const modalClose = document.getElementById('modal-close');
+document.getElementById("submit-message").disabled = true;
 
 // Show Navbar
 toggleMenu.addEventListener('click', () => {
